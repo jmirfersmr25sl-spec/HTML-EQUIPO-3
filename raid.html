@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Instalación del almacenamiento | Vivero de Empresas</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">VIVERO <span>EMPRESAS</span></a>
+        <nav>
+            <ul>
+                <li class="tiene-sub"><a href="index.html">¿Qué ofrecemos? ▾</a>
+                    <ul class="submenu">
+                        <li><a href="infraestructura.html">Infraestructura de red</a></li>
+                        <li><a href="aws.html">Despliegue en AWS</a></li>
+                    </ul>
+                </li>
+                <li><a href="proyecto.html">Empresas</a></li>
+                <li><a href="Entrevistas.html">Ofertas de trabajo</a></li>
+                <li><a href="cuestionario.html" class="btn-rojo">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" style="padding:45px 6%">
+        <div class="hero-texto">
+            <span class="etiqueta">P4 · Almacenamiento</span>
+            <h1 style="font-size:40px">Instalación del almacenamiento del vivero</h1>
+            <p>Preparación de una partición NTFS, creación de un volumen reflejado RAID 1 con dos discos, configuración de usuarios y grupo, y permisos NTFS sobre la carpeta de almacenamiento.</p>
+            <a href="p4.pdf" class="btn-rojo" download>Descargar el PDF</a>
+        </div>
+    </section>
+
+    <section class="contenedor" style="flex-direction:column">
+        <div class="cabecera-flex"><div><h2>Paso a paso</h2></div><span class="etiqueta" style="margin-bottom:5px">6 apartados</span></div>
+        <div class="grid-tarjetas">
+            <div class="tarjeta"><div class="tarjeta-contenido"><div><span class="numero">01</span><h3>Almacenamiento físico</h3><p style="margin-bottom:0">Comprobamos el disco principal de 465 GB con DiskPart y creamos una partición adicional de 5 GB en NTFS.</p></div></div></div>
+            <div class="tarjeta"><div class="tarjeta-contenido"><div><span class="numero">02</span><h3>RAID 1</h3><p style="margin-bottom:0">Convertimos los discos 1 y 2 de básicos a dinámicos y creamos un volumen reflejado de unos 149 GB con la letra D:.</p></div></div></div>
+            <div class="tarjeta"><div class="tarjeta-contenido"><div><span class="numero">03</span><h3>Usuarios y grupo</h3><p style="margin-bottom:0">Creamos las cuentas de Iker, Andrei, Julen M y Julen N, y el grupo Impri 3D con sus integrantes.</p></div></div></div>
+            <div class="tarjeta"><div class="tarjeta-contenido"><div><span class="numero">04</span><h3>Permisos de la carpeta</h3><p style="margin-bottom:0">Configuramos los permisos NTFS de la carpeta Almacenamiento_Impri3D para controlar el acceso de cada usuario.</p></div></div></div>
+            <div class="tarjeta"><div class="tarjeta-contenido"><div><span class="numero">05</span><h3>Tiempos</h3><p style="margin-bottom:0">Estimación orientativa para toda la práctica: entre 80 y 130 minutos.</p></div></div></div>
+            <div class="tarjeta"><div class="tarjeta-contenido"><div><span class="numero">06</span><h3>Incidencias</h3><p style="margin-bottom:0">Para crear el RAID 1 hubo que convertir los discos a dinámicos antes de poder formatear el volumen reflejado.</p></div></div></div>
+        </div>
+
+        <div class="cabecera-flex" style="margin-top:60px" id="documento"><div><h2>Documento completo</h2></div><div><a href="P4-instalacion-almacenamiento.pdf" class="btn-rojo" download>Descargar PDF</a> <a href="P4-instalacion-almacenamiento.pdf" class="btn-borde" target="_blank">Abrir en otra pestaña</a></div></div>
+        <iframe class="visor-pdf" src="p4.pdf" title="P4 Instalación del almacenamiento (PDF)"></iframe>
+    </section>
+
+    <footer>
+        <div>
+            <a href="index.html" class="logo">VIVERO <span>EMPRESAS</span></a>
+            <p class="footer-nota">© 2026 Vivero de Empresas. Innovación con propósito.</p>
+        </div>
+        <p class="footer-nota">Protección de datos: los datos facilitados en los formularios se usan solo para gestionar tu solicitud, conforme al RGPD y la LOPDGDD.</p>
+        <div>
+            <p class="footer-nota">Autores: Andrei y Julen Navarro</p>
+            <p class="footer-nota"><a href="#">Instagram</a> · <a href="#">LinkedIn</a> · <a href="#">X</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>
