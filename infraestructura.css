@@ -1,0 +1,21 @@
+#esquema {
+    flex-direction: column;
+    scroll-margin-top: 100px;
+}
+
+.separador-seccion {
+    margin-top: 60px;
+}
+
+.tarjeta .dato-numero {
+    color: #d90429;
+    font-size: 30px;
+}
+
+.tarjeta .dato-titulo {
+    font-size: 18px;
+}
+
+.tarjeta .sin-margen {
+    margin-bottom: 0;
+}
