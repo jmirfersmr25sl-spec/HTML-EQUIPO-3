@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instalación de equipamiento | Vivero de Empresas</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">VIVERO <span>EMPRESAS</span></a>
+        <nav>
+            <ul>
+                <li class="tiene-sub"><a href="index.html">¿Qué ofrecemos? ▾</a>
+                    <ul class="submenu">
+                        <li><a href="infraestructura.html">Infraestructura de red</a></li>
+                        <li><a href="aws.html">Despliegue en AWS</a></li>
+                    </ul>
+                </li>
+                <li><a href="proyecto.html">Empresas</a></li>
+                <li><a href="sostenibilidad.html">Sostenibilidad</a></li>
+                <li><a href="Entrevistas.html">Ofertas de trabajo</a></li>
+                <li><a href="cuestionario.html" class="btn-rojo">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" style="padding:45px 6%">
+        <div class="hero-texto">
+            <span class="etiqueta">P3 · Equipamiento informático</span>
+            <h1 style="font-size:40px">Instalación del equipamiento informático del vivero</h1>
+            <p>Instalación de Windows Server 2019 en el servidor del vivero, con los roles de servidor web con FTP y DHCP, FileZilla Client y el gestor de contraseñas KeePassXC.</p>
+            <a href="P3-instalacion-equipamiento.pdf" class="btn-rojo" download>Descargar el PDF</a>
+        </div>
+    </section>
+
+    <section class="contenedor" style="flex-direction:column">
+        <div class="cabecera-flex"><div><h2>Paso a paso</h2></div><span class="etiqueta" style="margin-bottom:5px">8 apartados</span></div>
+        <div class="grid-tarjetas">
+            <div class="tarjeta"><div class="tarjeta-contenido"><div><span class="numero">01</span><h3>Material</h3><p style="margin-bottom:0">Piezas y programas usados: placa MSI H81M-E33, procesador Intel Core i3-4160, 4 GB de RAM, disco Hitachi de 465,8 GB y Ventoy.</p></div></div></div>
+            <div class="tarjeta"><div class="tarjeta-contenido"><div><span class="numero">02</span><h3>Configuración de la BIOS</h3><p style="margin-bottom:0">Comprobamos que el equipo reconoce sus piezas y revisamos el orden de arranque desde Settings → Boot.</p></div></div></div>
+            <div class="tarjeta"><div class="tarjeta-contenido"><div><span class="numero">03</span><h3>Instalación de Windows Server</h3><p style="margin-bottom:0">Arrancamos desde el pendrive con Ventoy, elegimos Windows Server 2019 Standard Evaluation (Desktop Experience) e instalamos en el disco.</p></div></div></div>
+            <div class="tarjeta"><div class="tarjeta-contenido"><div><span class="numero">04</span><h3>Configuración inicial</h3><p style="margin-bottom:0">Establecemos la contraseña del usuario Administrador y entramos en el Administrador del servidor.</p></div></div></div>
+            <div class="tarjeta"><div class="tarjeta-contenido"><div><span class="numero">05</span><h3>Roles y programas</h3><p style="margin-bottom:0">Instalamos el servidor web (IIS) con FTP, el servidor DHCP, FileZilla Client y KeePassXC.</p></div></div></div>
+            <div class="tarjeta"><div class="tarjeta-contenido"><div><span class="numero">06</span><h3>Medidas de seguridad</h3><p style="margin-bottom:0">Las contraseñas se guardan en una base de datos de KeePassXC cifrada y protegida con una contraseña maestra.</p></div></div></div>
+            <div class="tarjeta"><div class="tarjeta-contenido"><div><span class="numero">07</span><h3>Tiempos</h3><p style="margin-bottom:0">Tiempo mínimo estimado para toda la práctica: 95 minutos (1 h 35 min).</p></div></div></div>
+            <div class="tarjeta"><div class="tarjeta-contenido"><div><span class="numero">08</span><h3>Incidencias</h3><p style="margin-bottom:0">KeePassXC no abría por falta del archivo MSVCP140.dll, solucionado con Visual C++. Queda pendiente fijar la IP del servidor.</p></div></div></div>
+        </div>
+
+        <div class="cabecera-flex" style="margin-top:60px" id="documento"><div><h2>Documento completo</h2></div><div><a href="P3-instalacion-equipamiento.pdf" class="btn-rojo" download>Descargar PDF</a> <a href="P3-instalacion-equipamiento.pdf" class="btn-borde" target="_blank">Abrir en otra pestaña</a></div></div>
+        <iframe class="visor-pdf" src="P3_Instalacion_equipamiento_vivero.pdf" title="P3 Instalación de equipamiento informático (PDF)"></iframe>
+    </section>
+
+    <footer>
+        <div>
+            <a href="index.html" class="logo">VIVERO <span>EMPRESAS</span></a>
+            <p class="footer-nota">© 2026 Vivero de Empresas. Innovación con propósito.</p>
+        </div>
+        <p class="footer-nota">Protección de datos: los datos facilitados en los formularios se usan solo para gestionar tu solicitud, conforme al RGPD y la LOPDGDD.</p>
+        <div>
+            <p class="footer-nota">Autores: Iker y Julen Miron</p>
+            <p class="footer-nota"><a href="#">Instagram</a> · <a href="#">LinkedIn</a> · <a href="#">X</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>

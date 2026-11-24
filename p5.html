@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios de red | Vivero de Empresas</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="p5.css">
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">VIVERO <span>EMPRESAS</span></a>
+        <nav>
+            <ul>
+                <li class="tiene-sub"><a href="index.html">¿Qué ofrecemos? ▾</a>
+                    <ul class="submenu">
+                        <li><a href="infraestructura.html">Infraestructura de red</a></li>
+                        <li><a href="aws.html">Despliegue en AWS</a></li>
+                    </ul>
+                </li>
+                <li><a href="proyecto.html">Empresas</a></li>
+                <li><a href="Entrevistas.html">Ofertas de trabajo</a></li>
+                <li><a href="cuestionario.html" class="btn-rojo">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero hero-p5">
+        <div class="hero-texto">
+            <span class="etiqueta">P5 · Servicios de red</span>
+            <h1 class="titulo-p5">Instalación y configuración de servicios de red en el vivero</h1>
+            <p>Configuración de una red interna con IP fija, DHCP, acceso remoto por RDP y un servidor FTP con acceso restringido por usuario.</p>
+            <a href="P5-servicios-de-red.pdf" class="btn-rojo" download>Descargar el PDF</a>
+        </div>
+    </section>
+
+    <section class="contenedor contenedor-columna">
+        <div class="cabecera-flex"><div><h2>Paso a paso</h2></div><span class="etiqueta etiqueta-pasos">12 pasos</span></div>
+        <div class="grid-tarjetas">
+            <div class="tarjeta"><div class="tarjeta-contenido"><div><span class="numero">01</span><h3>Adaptadores de red</h3><p class="sin-margen">Configuramos el segundo adaptador de VirtualBox como red interna para conectar el servidor con nuestra red.</p></div></div></div>
+            <div class="tarjeta"><div class="tarjeta-contenido"><div><span class="numero">02</span><h3>IP fija con Netplan</h3><p class="sin-margen">Asignamos la IP 192.168.1.10/24 a la red interna, aplicamos los cambios y comprobamos la dirección.</p></div></div></div>
+            <div class="tarjeta"><div class="tarjeta-contenido"><div><span class="numero">03</span><h3>Instalar DHCP</h3><p class="sin-margen">Instalamos isc-dhcp-server para que el servidor reparta direcciones IP a los clientes.</p></div></div></div>
+            <div class="tarjeta"><div class="tarjeta-contenido"><div><span class="numero">04</span><h3>Configurar DHCP</h3><p class="sin-margen">Definimos la red 192.168.1.0/24 con un rango de 192.168.1.100 a 192.168.1.200 y comprobamos que no hay errores.</p></div></div></div>
+            <div class="tarjeta"><div class="tarjeta-contenido"><div><span class="numero">05</span><h3>Comprobar conectividad</h3><p class="sin-margen">Desde Ubuntu Desktop hacemos ping a 192.168.1.10 y recibimos cuatro respuestas sin pérdida de paquetes.</p></div></div></div>
+            <div class="tarjeta"><div class="tarjeta-contenido"><div><span class="numero">06</span><h3>Escritorio remoto (XRDP)</h3><p class="sin-margen">Instalamos XRDP y comprobamos que el servicio está activo y preparado para recibir conexiones.</p></div></div></div>
+            <div class="tarjeta"><div class="tarjeta-contenido"><div><span class="numero">07</span><h3>XFCE y Remmina</h3><p class="sin-margen">Configuramos XFCE como escritorio de la sesión e instalamos Remmina en Ubuntu Desktop para conectarnos por RDP.</p></div></div></div>
+            <div class="tarjeta"><div class="tarjeta-contenido"><div><span class="numero">08</span><h3>Servidor FTP (vsftpd)</h3><p class="sin-margen">Instalamos vsftpd, hacemos una copia de seguridad de su configuración y permitimos el acceso de usuarios locales con escritura.</p></div></div></div>
+            <div class="tarjeta"><div class="tarjeta-contenido"><div><span class="numero">09</span><h3>Crear usuarios</h3><p class="sin-margen">Creamos las cuentas iker, julenm, julenn y andrei con adduser y comprobamos que existen con getent passwd.</p></div></div></div>
+            <div class="tarjeta"><div class="tarjeta-contenido"><div><span class="numero">10</span><h3>Carpetas y permisos</h3><p class="sin-margen">Creamos una carpeta personal privada para cada usuario y una carpeta común compartida con el grupo impri3d.</p></div></div></div>
+            <div class="tarjeta"><div class="tarjeta-contenido"><div><span class="numero">11</span><h3>Aislamiento y montajes</h3><p class="sin-margen">Limitamos a cada usuario a su zona con chroot, enlazamos las carpetas con mount --bind y añadimos los montajes a /etc/fstab.</p></div></div></div>
+            <div class="tarjeta"><div class="tarjeta-contenido"><div><span class="numero">12</span><h3>Pruebas de acceso</h3><p class="sin-margen">Comprobamos los permisos entre usuarios y nos conectamos por FTP desde Windows con iker y julenm.</p></div></div></div>
+        </div>
+
+        <div class="cabecera-flex separador-documento"><div><h2>Documento completo</h2></div><a href="P5-servicios-de-red.pdf" class="btn-borde" target="_blank">Abrir en otra pestaña</a></div>
+        <iframe class="visor-pdf" src="P5-servicios-de-red.pdf" title="Práctica P5 (PDF)"></iframe>
+    </section>
+
+    <footer>
+        <div>
+            <a href="index.html" class="logo">VIVERO <span>EMPRESAS</span></a>
+            <p class="footer-nota">© 2026 Vivero de Empresas. Innovación con propósito.</p>
+        </div>
+        <p class="footer-nota">Protección de datos: los datos facilitados en los formularios se usan solo para gestionar tu solicitud, conforme al RGPD y la LOPDGDD.</p>
+        <div>
+            <p class="footer-nota">Autores: Andrei y Julen Navarro</p>
+            <p class="footer-nota"><a href="#">Instagram</a> · <a href="#">LinkedIn</a> · <a href="#">X</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>
