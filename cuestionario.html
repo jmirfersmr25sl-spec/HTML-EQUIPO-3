@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acceso y Cuestionario | Vivero de Empresas</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">VIVERO <span>EMPRESAS</span></a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="espacios.html">Espacios</a></li>
+                <li><a href="proyecto.html">Empresas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" style="padding: 45px 6%;">
+        <div class="hero-texto">
+            <span class="etiqueta">Portal del Vivero</span>
+            <h1 style="font-size: 40px;">Acceso y Solicitud de Espacio</h1>
+            <p>Inicia sesión si ya formas parte de nuestras 18 empresas alojadas o rellena el cuestionario para traer tu proyecto al vivero.</p>
+            <a href="index.html" class="btn-azul">← Volver al inicio</a>
+        </div>
+        <div class="hero-imagen">
+            <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=800&q=80" alt="Reunión de emprendedores en el vivero" style="height: 250px;">
+        </div>
+    </section>
+
+    <div class="contenedor">
+        <div class="grid-formularios">
+            <div class="caja-formulario">
+                <span class="etiqueta">Empresas Alojadas</span>
+                <h2 style="margin-bottom: 20px;">Iniciar Sesión</h2>
+                <form action="index.html">
+                    <div class="grupo-input">
+                        <label>Correo Electrónico:</label>
+                        <input type="email" placeholder="empresa@ejemplo.com" required>
+                    </div>
+                    <div class="grupo-input">
+                        <label>Contraseña:</label>
+                        <input type="password" placeholder="••••••••" required>
+                    </div>
+                    <button type="submit" class="btn-azul" style="width: 100%; border: none;">Entrar al Portal</button>
+                </form>
+            </div>
+
+            <div class="caja-formulario">
+                <span class="etiqueta">Nuevos Proyectos</span>
+                <h2 style="margin-bottom: 20px;">Cuestionario de Solicitud</h2>
+                <form action="index.html">
+                    <div class="grupo-input">
+                        <label>Nombre completo:</label>
+                        <input type="text" placeholder="Tu nombre y apellidos" required>
+                    </div>
+                    <div class="grupo-input">
+                        <label>Nombre de tu proyecto o empresa:</label>
+                        <input type="text" placeholder="Ej. Impri3D" required>
+                    </div>
+                    <div class="grupo-input">
+                        <label>¿Qué espacio necesitas?</label>
+                        <select>
+                            <option>Puesto de trabajo individual (Coworking)</option>
+                            <option>Despacho privado para equipo</option>
+                            <option>Taller de prototipado / Laboratorio 3D</option>
+                        </select>
+                    </div>
+                    <div class="grupo-input">
+                        <label>Cuéntanos tu idea:</label>
+                        <textarea rows="4" placeholder="Describe tu proyecto y su impacto..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn-rojo" style="width: 100%;">Enviar Cuestionario</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <span class="logo">VIVERO <span>EMPRESAS</span></span>
+        <p style="font-size: 14px; color: #cbd5e1;">© 2026 Vivero de Empresas. Innovación con propósito.</p>
+    </footer>
+
+</body>
+</html>

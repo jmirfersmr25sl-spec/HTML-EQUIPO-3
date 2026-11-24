@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Despliegue en AWS | Vivero de Empresas</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">VIVERO <span>EMPRESAS</span></a>
+        <nav>
+            <ul>
+                <li class="tiene-sub"><a href="index.html">¿Qué ofrecemos? ▾</a>
+                    <ul class="submenu">
+                        <li><a href="infraestructura.html">Infraestructura de red</a></li>
+                        <li><a href="aws.html">Despliegue en AWS</a></li>
+                    </ul>
+                </li>
+                <li><a href="proyecto.html">Empresas</a></li>
+                <li><a href="sostenibilidad.html">Sostenibilidad</a></li>
+                <li><a href="Entrevistas.html">Ofertas de trabajo</a></li>
+                <li><a href="cuestionario.html" class="btn-rojo">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" style="padding:45px 6%">
+        <div class="hero-texto">
+            <span class="etiqueta">P10 · Cloud computing</span>
+            <h1 style="font-size:40px">Despliegue de aplicaciones en AWS</h1>
+            <p>Cómo lanzamos una instancia EC2 con Ubuntu y nos conectamos por SSH con MobaXterm.</p>
+            <a href="TRABAJO_ AWS.pdf" class="btn-rojo" download>VER PDF</a>
+        </div>
+    </section>
+
+    <section class="contenedor" style="flex-direction:column">
+        <div class="cabecera-flex"><div><h2>Paso a paso</h2></div><span class="etiqueta" style="margin-bottom:5px">8 pasos</span></div>
+        <div class="grid-tarjetas"><div class="tarjeta"><div class="tarjeta-contenido"><div><span class="numero">01</span><h3>Esperar al laboratorio</h3><p style="margin-bottom:0">Esperamos a que el botón del laboratorio de AWS Academy se ponga en verde.</p></div></div></div><div class="tarjeta"><div class="tarjeta-contenido"><div><span class="numero">02</span><h3>Lanzar instancia</h3><p style="margin-bottom:0">Entramos en EC2 y pulsamos «Lanzar instancia».</p></div></div></div><div class="tarjeta"><div class="tarjeta-contenido"><div><span class="numero">03</span><h3>Nombre y sistema</h3><p style="margin-bottom:0">Ponemos el nombre (Impri3d), elegimos Ubuntu y su versión.</p></div></div></div><div class="tarjeta"><div class="tarjeta-contenido"><div><span class="numero">04</span><h3>Claves y firewall</h3><p style="margin-bottom:0">Seleccionamos el par de claves, activamos el tráfico HTTP y HTTPS y lanzamos la instancia.</p></div></div></div><div class="tarjeta"><div class="tarjeta-contenido"><div><span class="numero">05</span><h3>Revisar parámetros</h3><p style="margin-bottom:0">Consultamos los datos de la instancia (IP pública, DNS) para usarlos en MobaXterm.</p></div></div></div><div class="tarjeta"><div class="tarjeta-contenido"><div><span class="numero">06</span><h3>Sesión SSH</h3><p style="margin-bottom:0">En MobaXterm: Session → SSH, IP pública y usuario <strong>ubuntu</strong>.</p></div></div></div><div class="tarjeta"><div class="tarjeta-contenido"><div><span class="numero">07</span><h3>Clave privada</h3><p style="margin-bottom:0">En ajustes avanzados marcamos «Use private key» y subimos el archivo .pem.</p></div></div></div><div class="tarjeta"><div class="tarjeta-contenido"><div><span class="numero">08</span><h3>Actualizar el sistema</h3><p style="margin-bottom:0">En la terminal ejecutamos <code>apt update</code> y <code>apt upgrade -y</code>.</p></div></div></div></div>
+
+        <div class="cabecera-flex" style="margin-top:60px"><div><h2>Documento completo</h2></div><a href="TRABAJO_ AWS.pdf" class="btn-borde" target="_blank">Abrir en otra pestaña</a></div>
+        <iframe class="visor-pdf" src="TRABAJO_ AWS.pdf" title="Trabajo AWS (PDF)"></iframe>
+    </section>
+
+    <footer>
+        <div>
+            <a href="index.html" class="logo">VIVERO <span>EMPRESAS</span></a>
+            <p class="footer-nota">© 2026 Vivero de Empresas. Innovación con propósito.</p>
+        </div>
+        <p class="footer-nota">Protección de datos: los datos facilitados en los formularios se usan solo para gestionar tu solicitud, conforme al RGPD y la LOPDGDD.</p>
+        <div>
+            <p class="footer-nota">Autor/a: [nombre del alumno]</p>
+            <p class="footer-nota"><a href="#">Instagram</a> · <a href="#">LinkedIn</a> · <a href="#">X</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>
